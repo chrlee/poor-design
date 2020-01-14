@@ -1,6 +1,6 @@
 ---
-title: ..
+title:
 layout: page
-path: "/a"
+path: "/f/m"
 
 ---

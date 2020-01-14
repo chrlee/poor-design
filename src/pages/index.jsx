@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import pic from './landscape.jpg'
 import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar'
+import Img from 'gatsby-image'
 
 class IndexRoute extends React.Component {
   render() {
@@ -19,7 +20,12 @@ class IndexRoute extends React.Component {
             <div className="content__inner">
               <div className="page">
                 <div className="page__body">
-                  <img src={pic} />
+                  <Img
+                    fluid={this.props.data.imageOne.childImageSharp.fluid}
+                    objectFit="cover"
+                    objectPosition="50% 50%"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -53,6 +59,13 @@ export const pageQuery = graphql`
           github
           rss
           vk
+        }
+      }
+    }
+    imageOne: file(relativePath: { eq: "landscape.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

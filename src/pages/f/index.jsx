@@ -1,6 +1,7 @@
 import kebabCase from 'lodash/kebabCase'
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import Helmet from 'react-helmet'
 import pic1 from './clothesarray.jpg'
 import pic2 from './bgextendmask.jpg'
@@ -11,7 +12,9 @@ class FashionRoute extends React.Component {
   constructor(props) {
     super(props)
     this.handler = this.handler.bind(this)
-    this.pics = [null, pic1, pic2]
+    this.pics = [this.props.data.imageZero,
+      this.props.data.imageOne,
+      this.props.data.imageTwo]
     this.state = { bgImg: 0 }
   }
   handler(imgIdx) {
@@ -32,7 +35,10 @@ class FashionRoute extends React.Component {
             <div className="content__inner">
               <div className="page">
                 <div className="page__body">
-                  <img src={this.pics[this.state.bgImg]} />
+                  <Img 
+                    fluid={this.pics[this.state.bgImg].childImageSharp.fluid}
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -44,6 +50,16 @@ class FashionRoute extends React.Component {
 }
 
 export default FashionRoute
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1000, quality: 90) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`;
 
 export const pageQuery = graphql`
   query FashionQuery {
@@ -68,6 +84,15 @@ export const pageQuery = graphql`
           vk
         }
       }
+    }
+    imageZero: file(relativePath: { eq: "f/empty.jpg" }) {
+      ...fluidImage
+    }
+    imageOne: file(relativePath: { eq: "f/clothesarray.jpg" }) {
+      ...fluidImage
+    }
+    imageTwo: file(relativePath: { eq: "f/bgextendmask.jpg" }) {
+      ...fluidImage
     }
     allMarkdownRemark(
       limit: 2000
