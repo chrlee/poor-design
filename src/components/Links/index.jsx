@@ -24,7 +24,7 @@ class Links extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Instagram
+              <i className="icon-instagram" />
             </a>
           </li>
         </ul>

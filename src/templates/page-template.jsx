@@ -15,7 +15,7 @@ class PageTemplate extends React.Component {
       <Layout>
         <div>
           <Helmet>
-            <title>{`${pageTitle} - ${title}`}</title>
+            <title>{`${pageTitle}`}</title>
             <meta name="description" content={description} />
           </Helmet>
           <PageTemplateDetails {...this.props} />

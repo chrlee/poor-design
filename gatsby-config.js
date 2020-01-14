@@ -4,37 +4,54 @@ const pxtorem = require('postcss-pxtorem')
 module.exports = {
   siteMetadata: {
     url: 'https://lumen.netlify.com',
-    title: 'James Kaniefski',
+    title: '',
     subtitle:
       '',
-    copyright: 'Copyright © James Kaniefski 2019. All rights reserved. Site by Christian Lee.',
+    copyright: '',
     disqusShortname: '',
     menu: [
       {
-        label: 'Fall 2019',
-        collection: 'Husks',
-        path: '/',
-      },
-      {
-        label: 'Spring 2019',
-        collection: 'Meridian',
-        path: '/meridian/',
-      },
-      {
-        label: 'About / CV',
+        label: 'fashion',
         collection: '',
-        path: '/about/',
+        path: '/f',
       },
       {
-        label: 'Contact',
+        label: 'music',
         collection: '',
-        path: '/contact/',
+        path: '/m',
+      },
+      {
+        label: 'tech',
+        collection: '',
+        path: '/t',
+      },
+      {
+        label: 'about',
+        collection: '',
+        path: '/a',
+      },
+      {
+        label: '+',
+        collection: '',
+        path: '/misc',
+      },
+    ],
+    fmenu: [
+      {
+        label: 'buy/sell',
+        path: 'https://grailed.com/snipes',
+        img: 1,
+      },
+      {
+        label: 'modeling',
+        path: '/f/m',
+        img: 2,
       },
     ],
     author: {
-      name: 'JAMES KANIEFSKI',
+      name: '••',
       email: '#',
-      instagram: 'jameskaniefski',
+      instagram: 'cjl.e',
       telegram: '#',
       twitter: '#',
       github: '#',
@@ -171,6 +188,8 @@ module.exports = {
           }),
       },
     },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',

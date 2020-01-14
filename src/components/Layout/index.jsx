@@ -9,10 +9,10 @@ class Layout extends React.Component {
 
     return (
       <div className="layout">
-        <Helmet defaultTitle="James Kaniefski"
-                link={[
-                  { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
-                ]}  />
+        <Helmet defaultTitle=".."
+          link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+          ]}  />
         {children}
       </div>
     )

@@ -3,6 +3,9 @@ import { Link } from 'gatsby'
 import './style.scss'
 
 class Menu extends React.Component {
+  constructor(props){
+    super(props);
+  }
   render() {
     const menu = this.props.data
     var re = /(["'])(\\?.)*?\1/;
@@ -11,15 +14,28 @@ class Menu extends React.Component {
       <ul className="menu__list">
         {menu.map(item => (
           <li className="menu__list-item" key={item.path}>
-            <Link
-              to={item.path}
-              className="menu__list-item-link"
-              activeClassName="menu__list-item-link menu__list-item-link--active"
-            >
-              {item.label}
-              <br />
-              <i>{item.collection ? item.collection : null} </i>
-            </Link>
+            {item.path.startsWith('http') ? (  
+                <a
+                href={item.path}
+                className="menu__list-item-link"
+                activeClassName="menu__list-item-link menu__list-item-link--active"
+                onMouseEnter={() => this.props.handler ? this.props.handler(item.img) : null}
+                >
+                  {item.label}
+                  <br />
+                </a>
+            ) : (
+                <Link
+                  to={item.path}
+                  className="menu__list-item-link"
+                  activeClassName="menu__list-item-link menu__list-item-link--active"
+                  onMouseEnter={() => this.props.handler ? this.props.handler(item.img) : null}
+                >
+                  {item.label}
+                  <br />
+                </Link>
+              )
+            }
           </li>
         ))}
       </ul>

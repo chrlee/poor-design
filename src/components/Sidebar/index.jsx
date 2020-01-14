@@ -6,12 +6,17 @@ import Links from '../Links'
 import './style.scss'
 
 class Sidebar extends React.Component {
+  constructor(props){
+    super(props);
+  }
+  
   render() {
     const { location } = this.props
     const {
       author,
       subtitle,
       menu,
+      fmenu,
     } = this.props.data.site.siteMetadata
     const isHomePage = get(location, 'pathname', '/') === '/'
 
@@ -19,11 +24,11 @@ class Sidebar extends React.Component {
     const authorBlock = (
       <div>
         {isHomePage ? (
-          <h1 className="sidebar__author-title">
+          <h2 className="sidebar__author-title">
             <Link className="sidebar__author-title-link" to="/">
               {author.name}
             </Link>
-          </h1>
+          </h2>
         ) : (
           <h2 className="sidebar__author-title">
             <Link className="sidebar__author-title-link" to="/">
@@ -41,7 +46,7 @@ class Sidebar extends React.Component {
         <div className="sidebar__inner">
           <div className="sidebar__author">{authorBlock}</div>
           <div>
-            <Menu data={menu} />
+            <Menu data={fmenu ? fmenu : menu} handler={this.props.handler} />
             <Links data={author} />
           </div>
         </div>

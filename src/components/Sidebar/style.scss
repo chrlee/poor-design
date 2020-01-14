@@ -18,13 +18,13 @@
             color: #111111;
             font-family: $typographic-font-family;
             font-weight: bold;
-            font-size: $typographic-base-font-size;
+            font-size: $typographic-root-font-size;
             font-style: normal;
             line-height: 1.2;
             @include line-height(1.6);
             @include margin(.5, 0, .5, 0);
             &-link {
-                color: $color-base;
+                color: #111111;
                 &:hover,
                 &:focus {
                     color: $color-primary;
@@ -44,7 +44,7 @@
         lost-column: 1/4;
         height: inherit;
         &__inner {
-            padding: 60px 60px 0px 60px;
+            padding: 60px 60px 0px 100px;
             min-width: 140px;
         }
     }
@@ -56,7 +56,7 @@
         lost-column: 1/5;
         &__inner {
             position: fixed;
-            padding: 60px;
+            padding: 60px 60px 0px 100px;
             top: 0;
             min-width: 200px;
         }

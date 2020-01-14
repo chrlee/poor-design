@@ -165,7 +165,7 @@ figcaption {
         float: left;
     }
     .content {
-        lost-column: 6/12;
+        lost-column: 7/12;
         &__inner {
             padding: 77px 0px;
             min-width: 400px;
@@ -175,7 +175,7 @@ figcaption {
 
 @include breakpoint-md {
     .content {
-        lost-column: 2/5;
+        lost-column: 3/7;
         &__inner {
             padding: 77px 35px;
         }
