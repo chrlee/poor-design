@@ -3,17 +3,6 @@
 
 .menu {
     @include margin(1.5, 1, 1, 0);
-    /* Safari 4.0 - 8.0 */
-    @-webkit-keyframes fade {
-        from {color: $typographic-base-font-color;}
-        to {color: $color-primary;}
-    }
-    
-    /* Standard syntax */
-    @keyframes fade {
-        from {color: $typographic-base-font-color;}
-        to {color: $color-primary;}
-    }
     &__list {
         list-style: none;
         padding: 0;
@@ -31,10 +20,9 @@
                 &:hover,
                 &:focus {
                     color: $color-primary;
-                    -webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
-                    -webkit-animation-duration: 0.7s; /* Safari 4.0 - 8.0 */
-                    animation-name: fade;
-                    animation-duration: 0.7s;
+                    -webkit-transition: color 600ms linear;
+                    -ms-transition: color 600ms linear;
+                    transition: color 600ms linear;
                 }
                 &--active {
                     color: $color-primary;
