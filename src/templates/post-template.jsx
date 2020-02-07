@@ -38,6 +38,11 @@ export const pageQuery = graphql`
           name
           twitter
         }
+        menu {
+          label
+          collection
+          path
+        }
         disqusShortname
         url
       }

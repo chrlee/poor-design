@@ -19,7 +19,7 @@ class Menu extends React.Component {
                 href={item.path}
                 className="menu__list-item-link"
                 activeClassName="menu__list-item-link menu__list-item-link--active"
-                onMouseEnter={() => this.props.handler ? this.props.handler(item.img) : null}
+                onMouseOver={() => this.props.handler ? this.props.handler(item.img) : null}
                 >
                   {item.label}
                   <br />
@@ -29,7 +29,7 @@ class Menu extends React.Component {
                   to={item.path}
                   className="menu__list-item-link"
                   activeClassName="menu__list-item-link menu__list-item-link--active"
-                  onMouseEnter={() => this.props.handler ? this.props.handler(item.img) : null}
+                  onMouseOver={() => this.props.handler ? this.props.handler(item.img) : null}
                 >
                   {item.label}
                   <br />

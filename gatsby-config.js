@@ -48,6 +48,18 @@ module.exports = {
         img: 2,
       },
     ],
+    tmenu: [
+      {
+        label: 'amazon',
+        path: 'https://amazon.com',
+        img: 1,
+      },
+      {
+        label: 'james kaniefski',
+        path: 'https://jameskaniefski.com',
+        img: 2,
+      },
+    ],
     author: {
       name: '••',
       email: '#',

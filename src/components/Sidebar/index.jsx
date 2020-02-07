@@ -17,6 +17,7 @@ class Sidebar extends React.Component {
       subtitle,
       menu,
       fmenu,
+      tmenu,
     } = this.props.data.site.siteMetadata
     const isHomePage = get(location, 'pathname', '/') === '/'
 
@@ -41,12 +42,18 @@ class Sidebar extends React.Component {
     )
     /* eslint-enable jsx-a11y/img-redundant-alt */
 
+    let menuout = null
+
+    if (menu) menuout = menu
+    else if (fmenu) menuout = fmenu
+    else if (tmenu) menuout = tmenu
     return (
       <div className="sidebar">
         <div className="sidebar__inner">
           <div className="sidebar__author">{authorBlock}</div>
           <div>
-            <Menu data={fmenu ? fmenu : menu} handler={this.props.handler} />
+            
+            <Menu data={menuout} handler={this.props.handler} />
             <Links data={author} />
           </div>
         </div>
