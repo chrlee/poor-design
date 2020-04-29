@@ -12,7 +12,8 @@ class TechRoute extends React.Component {
     this.handler = this.handler.bind(this)
     this.pics = [this.props.data.imageZero,
       this.props.data.imageOne,
-      this.props.data.imageTwo]
+      this.props.data.imageTwo,
+      this.props.data.imageThree]
     this.state = { bgImg: 0 }
   }
   handler(imgIdx) {
@@ -27,7 +28,7 @@ class TechRoute extends React.Component {
     return (
       <Layout>
         <div>
-          <Helmet title={`t`} />
+          <Helmet title={`tech`} />
           <Sidebar {...this.props} handler={this.handler} />
           <div className="content">
             <div className="content__inner">
@@ -90,6 +91,9 @@ export const pageQuery = graphql`
       ...fluidImage
     }
     imageTwo: file(relativePath: { eq: "t/james.jpg" }) {
+      ...fluidImage
+    }
+    imageThree: file(relativePath: { eq: "t/doas.png" }) {
       ...fluidImage
     }
     allMarkdownRemark(

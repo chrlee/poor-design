@@ -2,8 +2,8 @@
 @import "../../assets/scss/mixins";
 
 .links {
-    @include margin-bottom(1);
-    @include margin-top(5);
+    @include margin-bottom(5);
+    @include margin-top(2);
     &__list {
         list-style: none;
         padding: 0;
@@ -23,4 +23,9 @@
             }
         }
     }
+    @include breakpoint-sm {
+        @include margin-top(5);
+        @include margin-bottom(1);
+    }
+
 }

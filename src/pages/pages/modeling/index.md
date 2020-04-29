@@ -1,25 +1,26 @@
 ---
-title:
-date: "2018-10-18T16:51:00.000Z"
-layout: post
-draft: false
+title: modeling
+layout: fpage
 path: "/f/m"
-category: ""
-tags:
-  - "f"
-description: "modeling"
 ---
 
-![](./m7.jpg)
-
-![](./m2.png)
-
+Moschino SS20
 ![](./m8.jpg)
 
+SkateboardSushi FW20
+![](./m9.png)
+
+SkateboardSushi FW20
+![](./m10.png)
+
+Alejandro Ibarra
+![](./m2.png)
+
+Alejandro Ibarra
 ![](./m3.jpg)
 
-![](./m4.jpg)
-
+Alejandro Ibarra
 ![](./m5.jpg)
 
+Headshot
 ![](./m1.jpg)

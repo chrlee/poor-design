@@ -29,7 +29,7 @@ class FashionRoute extends React.Component {
     return (
       <Layout>
         <div>
-          <Helmet title={`f`} />
+          <Helmet title={`fashion`} />
           <Sidebar {...this.props} handler={this.handler} />
           <div className="content">
             <div className="content__inner">

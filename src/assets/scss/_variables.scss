@@ -23,8 +23,8 @@ $typographic-smallest-font-size: 11px;
 $typographic-base-line-height: 1.4;
 
 $typographic-base-font-color: $color-base;
-$typographic-link-p-font-color: $color-primary;
-$typographic-link-s-font-color: $color-secondary;
+$typographic-link-p-font-color: $color-secondary;
+$typographic-link-s-font-color: $color-base;
 
 $typographic-leading: round(16 * ($typographic-root-font-size / 100) * $typographic-base-line-height);
 

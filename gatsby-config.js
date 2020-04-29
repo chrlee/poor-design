@@ -51,13 +51,18 @@ module.exports = {
     tmenu: [
       {
         label: 'amazon',
-        path: 'https://amazon.com',
+        path: '/t/a',
         img: 1,
       },
       {
         label: 'james kaniefski',
-        path: 'https://jameskaniefski.com',
+        path: '/t/j',
         img: 2,
+      },
+      {
+        label: 'DOAS synth',
+        path: 'https://chrlee.github.io/DOAS/',
+        img: 3,
       },
     ],
     author: {
@@ -144,6 +149,13 @@ module.exports = {
             options: {
               maxWidth: 960,
             },
+          },
+          {
+            resolve: 'gatsby-remark-embed-youtube',
+            options: {
+              width: 1000,
+              height: 500,
+            }
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',

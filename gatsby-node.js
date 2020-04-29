@@ -9,6 +9,8 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     const postTemplate = path.resolve('./src/templates/post-template.jsx')
     const pageTemplate = path.resolve('./src/templates/page-template.jsx')
+    const fpageTemplate = path.resolve('./src/templates/fpage-template.jsx')
+    const tpageTemplate = path.resolve('./src/templates/tpage-template.jsx')
 
     graphql(`
       {
@@ -47,6 +49,18 @@ exports.createPages = ({ graphql, actions }) => {
           createPage({
             path: edge.node.fields.slug,
             component: slash(postTemplate),
+            context: { slug: edge.node.fields.slug },
+          })
+        } else if (_.get(edge, 'node.frontmatter.layout') === 'fpage') {
+          createPage({
+            path: edge.node.fields.slug,
+            component: slash(fpageTemplate),
+            context: { slug: edge.node.fields.slug },
+          })
+        } else if (_.get(edge, 'node.frontmatter.layout') === 'tpage') {
+          createPage({
+            path: edge.node.fields.slug,
+            component: slash(tpageTemplate),
             context: { slug: edge.node.fields.slug },
           })
         }
