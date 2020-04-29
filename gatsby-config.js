@@ -61,7 +61,7 @@ module.exports = {
       },
       {
         label: 'DOAS synth',
-        path: 'https://chrlee.github.io/DOAS/',
+        path: '/t/d',
         img: 3,
       },
     ],
