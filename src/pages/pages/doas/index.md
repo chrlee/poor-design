@@ -6,8 +6,8 @@ path: "/t/d"
 ---
 ###### <span style="color:black">DOAS Synth</span>
 
-[https://jameskaniefski.com](https://jameskaniefski.com)
+[View Here](https://chrlee.github.io/DOAS/)
 
-<span style="color:black">James Kaniefski's personal portfolio website is the first freelance project I've took on. Since this website contained mostly static web content, jameskaniefski.com was built on a GatsbyJS platform to both increase speed and efficiency, as well as provide zero server hosting costs as all Node.JS packages are implemented into the site at build-time. In order to further increase the efficiency of the website and design for long-term use, all content-related management has been offloaded to the client using GraphQL and a third-party content management system. GraphQL automatically generates all the pages in the website from markdown files, and the third-party CMS gives the client a clean and easy UI to update website content and add new pages, all while being integrated into a continuous-deployment environment leaving no work left to be done from my end. To see James's website, click [here.](https://jameskaniefski.com)</span>
+<span style="color:black">The "Dots-On-A-Sphere Synthesizer is a small Javascript experiment using both ThreeJs and ToneJS to create a synthesizer that doubles as a music visualizer. The dots are equidistantly arranged using the Fibonacci Lattice algorithm and connected via convex hull. The number of points on the sphere can be changed using the menu, but is limited to the range from 3 to 128. Any less than three and the synthesizer would no longer have shape and any more than 128 then the notes will go outside of the range usually seen on a keyboard. The synthesizer can also read MIDI files, as shown with the example of Claude Debussy's Clair de Lune.</span>
 
-[![Screenshot of James Kaniefski's Website](../doas.png)](https://jameskaniefski.com)
+[![Screenshot of DOAS synth](../doas.png)](https://chrlee.github.io/DOAS/)

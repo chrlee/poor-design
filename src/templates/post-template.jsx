@@ -44,7 +44,7 @@ export const pageQuery = graphql`
           path
         }
         disqusShortname
-        url
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
