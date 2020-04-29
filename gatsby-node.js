@@ -2,6 +2,7 @@ const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
 const slash = require('slash')
+const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -39,7 +40,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
 
       _.each(result.data.allMarkdownRemark.edges, edge => {
-        if (_.get(edge, 'node.frontmatter.layout') === 'page') {
+        if (_.get(edge, 'node.frontmatter.layout') === 'page' && edge.node.fields.slug) {
           createPage({
             path: edge.node.fields.slug,
             component: slash(pageTemplate),
@@ -70,8 +71,6 @@ exports.createPages = ({ graphql, actions }) => {
     })
   })
 }
-
-const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
