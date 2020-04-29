@@ -146,12 +146,6 @@ module.exports = {
         plugins: [
           'gatsby-remark-relative-images',
           {
-            resolve: 'gatsby-plugin-netlify-cms-paths',
-            options: {
-              cmsConfig: '/static/admin/config.yml',
-            },
-          },
-          {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 1000,
