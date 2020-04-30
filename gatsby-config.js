@@ -64,12 +64,17 @@ module.exports = {
         path: '/t/d',
         img: 3,
       },
+      {
+        label: 'jazzML',
+        path: '/t/jml',
+        img: 4,
+      },
     ],
     author: {
       name: '••',
       email: '#',
       instagram: 'cjl.e',
-      telegram: '#',
+      telegram: 'cjle',
       twitter: '#',
       github: '#',
       rss: '#',

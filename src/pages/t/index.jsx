@@ -13,7 +13,8 @@ class TechRoute extends React.Component {
     this.pics = [this.props.data.imageZero,
       this.props.data.imageOne,
       this.props.data.imageTwo,
-      this.props.data.imageThree]
+      this.props.data.imageThree,
+      this.props.data.imageFour]
     this.state = { bgImg: 0 }
   }
   handler(imgIdx) {
@@ -94,6 +95,9 @@ export const pageQuery = graphql`
       ...fluidImage
     }
     imageThree: file(relativePath: { eq: "t/doas.png" }) {
+      ...fluidImage
+    }
+    imageFour: file(relativePath: { eq: "t/magenta.jpg" }) {
       ...fluidImage
     }
     allMarkdownRemark(
