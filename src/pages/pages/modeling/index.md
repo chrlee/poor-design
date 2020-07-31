@@ -29,6 +29,6 @@ Alejandro Ibarra
 The Hot Pot Lab
 
 Styling by The Hot Pot Lab
-![](./m11.jpg)
+![](./m11.png)
 
 [**View Headshot**](https://drive.google.com/file/d/1A9nNvEnZTwjThGvJAreXASjvhoi-kHon/view?usp=sharing)
