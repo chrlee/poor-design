@@ -10,4 +10,4 @@ path: "/t/a"
 
 <span style="color:black">In the summer of 2019 I worked under Amazon Advertising in New York City as one of the first members of the International Expansion team. At the time, since advertising was a relatively newer business in the Amazon ecosystem, Amazon Advertising was having a hard time keeping up with Amazon Retail in launching into new marketplaces. In order to counteract this, I helped design and develop an internal tool that allowed for rapid expansion into new marketplaces, reducing the org-wide engineering effort from ~7 months to ~1 month per new marketplace. 
 
-[**View Resume**](https://drive.google.com/file/d/168gL-Z3YHDKkhA7HC0T0rEtZKC5XP-M2/view?usp=sharing)
+[**View Resume**](https://drive.google.com/file/d/1eX1V52X9tRcj82XCtspRgyUxJbEGNkVD/view?usp=sharing)
