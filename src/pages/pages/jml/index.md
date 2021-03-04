@@ -12,4 +12,4 @@ path: "/t/jml"
 
 <span style="color:black">UPDATE: Minor stylistic improvements on the model after a second round of training.</span>
 
-`youtube:https://youtu.be/NWy_IEcmqjo`
+`youtube:https://www.youtube.com/embed/NWy_IEcmqjo`
