@@ -39,7 +39,7 @@ module.exports = {
     fmenu: [
       {
         label: 'buy/sell',
-        path: 'https://grailed.com/snipes',
+        path: 'https://perlin-noise.com',
         img: 1,
       },
       {
@@ -149,7 +149,9 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          'gatsby-remark-relative-images',
+          {
+            resolve: `gatsby-remark-relative-images-v2`,
+          },
           {
             resolve: 'gatsby-remark-images',
             options: {
@@ -221,7 +223,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',

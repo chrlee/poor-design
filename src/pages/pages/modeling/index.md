@@ -9,12 +9,12 @@ Moschino SS20 with Tyra Banks, Bella Hadid, Gigi Hadid
 Styling by Jeremy Scott, Shot by Steven Meisel
 ![](./m8.jpg)
 
-SkateboardSushi FW20
+Arthur Christine Studios
 
 Hair & Styling by Dusan Grante
 ![](./m9.png)
 
-SkateboardSushi FW20
+Arthur Christine Studios
 ![](./m10.png)
 
 Me for Alejandro Ibarra
